@@ -92,6 +92,7 @@ main img {
 
 #CTA h1 {
     font-size: 2.2rem;
+    font-weight: bold;
     text-align: start;
     color: hsla(240, 5%, 25%, 1);
 }
@@ -148,6 +149,7 @@ main img {
 #quotation h2 {
     margin: 1.5rem 0;
     font-size: 2.2rem;
+    font-weight: bold;
     text-align: start;
 }
 
@@ -211,4 +213,44 @@ main img {
     position: relative;
     top: 4rem;
     background-color: hsla(240, 5%, 90%, 1);
+    display: flex;
+    flex-flow: row wrap;
+    /* align-content: space-between; */
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+#courses .course {
+    width: 25%;
+    margin: 1rem 2rem;
+    background-color: white;
+    padding-bottom: 1.5rem;
+}
+
+#courses .course img {
+    width: 100%;
+    height: auto;
+}
+
+#courses .course p {
+    padding: 0 1rem;
+    line-height: 1.2rem;
+}
+
+/* #courses .c-description {
+    width: 100%;
+} */
+
+#courses h2 {
+    width: 100%;
+    font-size: 2.2rem;
+    font-weight: bold;
+    align-content: center;
+    padding-bottom: 2rem;
+}
+
+#courses h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 1rem;
 }
