@@ -167,9 +167,12 @@ main img {
 
 #announce article {
     display: flex;
-    /* flex-flow: column; */
     border-bottom: 1px solid hsla(240, 5%, 90%, 1);
     border-left: 1px solid hsla(240, 5%, 90%, 1);
+}
+
+#first {
+    padding-top: 1rem;
 }
 
 #announce article:hover {
@@ -189,6 +192,7 @@ main img {
     padding: 1rem;
     width: 35%;
 }
+
 
 #announce article h3 {
     font-size: 1.3rem;
@@ -215,9 +219,10 @@ main img {
     background-color: hsla(240, 5%, 90%, 1);
     display: flex;
     flex-flow: row wrap;
-    /* align-content: space-between; */
+    align-content: space-between; 
     justify-content: center;
     padding: 2rem 0;
+    text-align: start;
 }
 
 #courses .course {
@@ -237,14 +242,11 @@ main img {
     line-height: 1.2rem;
 }
 
-/* #courses .c-description {
-    width: 100%;
-} */
-
 #courses h2 {
     width: 100%;
     font-size: 2.2rem;
     font-weight: bold;
+    text-align: center;
     align-content: center;
     padding-bottom: 2rem;
 }
@@ -253,4 +255,121 @@ main img {
     font-size: 1.3rem;
     font-weight: 600;
     margin: 1rem;
+}
+
+#courses h3::after {
+    display: block;
+    content: "COURSES";
+    font-size: 1rem;
+    opacity: 0.7;
+    font-weight: lighter;
+    margin-top: 1rem;
+}
+
+/* Thesis */
+
+#thesis {
+    position: relative;
+    top: 4rem;
+    width: 100%;
+}
+
+#thesis h2 {
+    width: 100%;
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 2rem;
+}
+
+#exhibit {
+    display: flex;
+}
+
+#urban {
+    display: inline-flex;
+    width: 60%;
+    flex-direction: column;
+    padding: 0 0 2rem 1.5rem;
+    text-align: start;
+}
+
+#urban video {
+    width: 100%;
+    height: auto;
+}
+
+#urban h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 1rem 0 1rem 0;
+}
+
+#papers {
+    display: inline-flex;
+    flex-direction: column;
+    width: 40%;
+    padding-left: 1.5rem;
+}
+
+.paper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: start;
+}
+
+.paper:hover {
+    background-color: hsla(240, 5%, 90%, 1);
+}
+
+.paper img {
+    display: inline-block;
+    padding: 1rem;
+    width: 35%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 1rem;
+}
+
+.content h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1.3rem;
+}
+
+.content p {
+    font-size: 1rem;
+    font-weight: 200;
+    margin-bottom: 1.3rem;
+}
+
+/* footer */
+
+footer {
+    position: relative;
+    top: 4rem;
+    border-top: 1px solid hsla(240, 5%, 90%, 1);
+    padding: 1rem 1.5rem 3rem 1.5rem;
+    display: flex;
+}
+
+footer p {
+    align-items: flex-end;
+    padding: 0 1rem;
+}
+
+footer p#rights {
+    margin: 0 auto 0 0;
+}
+
+footer p#rights::before {
+    content: "©";
+    position: relative;
+    bottom: 0.05rem;
+    right: 0.2rem;
 }
