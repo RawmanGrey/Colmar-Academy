@@ -129,6 +129,32 @@ main img {
     opacity: 0.7;
 }
 
+@media only screen and (max-width: 811px) {
+    main {
+        flex-flow: column;
+    }
+
+    main img {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+
+    #CTA {
+        margin: 2rem 1rem;
+    }
+    #CTA h1, p {
+        text-align: center;
+    }
+
+    #CTA button {
+        margin: 1.5rem 0 2rem 0;
+        /* max-width: 365px;*/
+        /* align-self: center;  */
+    }
+
+}
+
 /* quotation and announce */
 
 #info {
