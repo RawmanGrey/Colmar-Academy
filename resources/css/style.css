@@ -59,7 +59,7 @@ header ul {
     align-items: center;
 
 }
- header ul li {
+ header ul li a {
      padding: 0 1rem;
      color: hsla(240, 5%, 40%, 1);
      font-weight: bold;
@@ -68,8 +68,61 @@ header ul {
 /* CTA banner */
 
 main {
-    display: block;
+    display: flex;
+    align-content: center;
     position: relative;
     top: 4rem;
-    background-color: coral;
+    background-color: hsla(240, 5%, 90%, 1);
+    padding: 2rem 1.5rem;
+}
+
+main img {
+    width: 60%;
+    height: auto;
+}
+
+#CTA {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-content: center;
+    margin: auto 1rem;
+}
+
+#CTA h1 {
+    font-size: 2.2rem;
+    text-align: start;
+    color: hsla(240, 5%, 25%, 1);
+}
+
+#CTA p {
+    font-size: 1.4rem;
+    padding: 2.2rem 0;
+    text-align: start;
+    color: hsla(240, 5%, 25%, 1);
+}
+
+#CTA button {
+    border-style: none;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 0.09rem;
+    background-color: hsla(240, 5%, 25%, 1);
+    padding: 0.5rem;
+    margin: 2rem 3rem 0 3rem;
+    transition: letter-spacing .4s ease-in 0.1s;
+    opacity: 1;
+    transition: opacity .1s ease-in;
+}
+
+#CTA button:hover {
+    box-shadow: 0.4rem 0.4rem 0.8rem inset rgb(47, 47, 47),
+                -0.4rem -0.4rem 0.8rem inset rgb(47, 47, 47);
+    letter-spacing: 0.13rem;
+    cursor: pointer;
+}
+
+#CTA button:active {
+    opacity: 0.7;
 }
