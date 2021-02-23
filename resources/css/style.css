@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    color: hsla(240, 5%, 25%, 1);
 }
 
 html {
@@ -73,12 +74,12 @@ main {
     position: relative;
     top: 4rem;
     background-color: hsla(240, 5%, 90%, 1);
-    padding: 2rem 1.5rem;
 }
 
 main img {
     width: 60%;
     height: auto;
+    padding: 2rem 0 2rem 1.5rem;
 }
 
 #CTA {
@@ -86,7 +87,7 @@ main img {
     flex-direction: column;
     height: 100%;
     align-content: center;
-    margin: auto 1rem;
+    margin: auto 1.5rem;
 }
 
 #CTA h1 {
@@ -125,4 +126,89 @@ main img {
 
 #CTA button:active {
     opacity: 0.7;
+}
+
+/* quotation and announce */
+
+#info {
+    display: flex;
+    position: relative;
+    top: 4rem;
+}
+
+#quotation {
+    width: 60%;
+    padding: 2rem 0 2rem 1.5rem;
+}
+
+#quotation img {
+    width: 100%;
+}
+
+#quotation h2 {
+    margin: 1.5rem 0;
+    font-size: 2.2rem;
+    text-align: start;
+}
+
+#quotation p {
+    font-size: 1rem;
+    text-align: start;
+    margin-bottom: 2rem;
+}
+
+#announce {
+    width: 40%;
+    padding: 0 0 0 1.5rem;
+    flex-flow: column;
+}
+
+#announce article {
+    display: flex;
+    /* flex-flow: column; */
+    border-bottom: 1px solid hsla(240, 5%, 90%, 1);
+    border-left: 1px solid hsla(240, 5%, 90%, 1);
+}
+
+#announce article:hover {
+    background-color: hsla(240, 5%, 90%, 1);
+}
+
+#announce article .content {
+    display: block;
+    margin: auto 0;
+    width: 65%;
+    padding: 1rem;
+    text-align: start;
+}
+
+#announce article img {
+    display: inline-block;
+    padding: 1rem;
+    width: 35%;
+}
+
+#announce article h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1.3rem;
+}
+
+#announce article p {
+    font-size: 1rem;
+    font-weight: 200;
+    margin-bottom: 1.3rem;
+}
+
+#announce article a p{
+    color: hsla(240, 90%, 60%, 1);
+    text-decoration: underline;
+}
+
+/* courses */
+
+#courses {
+    position: relative;
+    top: 4rem;
+    background-color: hsla(240, 5%, 90%, 1);
 }
