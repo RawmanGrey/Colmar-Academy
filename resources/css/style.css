@@ -1,65 +1,75 @@
-html {
-    background-color: black;
-    width: 100%;
+* {
     box-sizing: border-box;
+}
+
+html {
+    display: block;
+    width: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
     text-align: center;
-    color: white;
 }
 
-h1 {
-    display: block;
-    font-size: 3.125rem;
-    font-weight: normal;
-    margin: 2rem auto;
+/* header */
+header {
+    width: 100%;
+    height: 4rem;
+    z-index: 10;
+    position: fixed;
+    background-color: white;
+    border-bottom: 1px solid black;
+    display: flex;
 }
 
-video {
-    display: block;
-    margin: 1rem auto;
+#logo{
+    display: inline-block;
+    margin: 1rem auto 1rem 1.5rem;
 }
 
-h2 {
-    font-weight: 300;
-    font-size: 2.625rem;
-    margin: 2.5rem auto;
+#logo a, #logo p, #logo img {
+    display: inline-flex;
+    align-self: center;
+}
+
+#logo p{
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+#logo p span {
+    color: hsla(240, 5%, 40%, 1);
+    font-weight: 500;
+}
+
+
+header nav {
+    display: inline-block;
+    z-index: 10;
     
+    height: 4rem;
 }
 
-h2#coming-soon::before {
-    content: "";
+header ul {
+    height: 100%;
+    align-self: flex-end;
+    display: flex;
+    flex-flow: row;
+    justify-content: right;
+    align-items: center;
+
+}
+ header ul li {
+     padding: 0 1rem;
+     color: hsla(240, 5%, 40%, 1);
+     font-weight: bold;
+ }
+
+/* CTA banner */
+
+main {
     display: block;
-    /* background-color: hotpink; */
-    height: 7rem;
-    width: 7rem;
-    background-image: url("../images/phone.webp");
-    background-repeat: no-repeat;
-    transform-origin: 200px 0;
-    transform: translate(50%) translate(-50%);
-    margin: 2rem auto;
-}
-
-p {
-    color: grey;
-    font-size: 1.3125rem;
-    margin-bottom: 1rem;
-}
-
-a.app-link p {
-    display: block;
-    color:aquamarine;
-    font-size: 1rem;
-    margin: 0.5rem auto 0.5rem auto;
-}
-
-footer p {
-    text-align: right;
-    color: grey;
-    margin: 3rem 1rem 2rem 1rem;
-}
-
-footer p::before {
-    content: "©";
-    margin-right: 0.3rem;
+    position: relative;
+    top: 4rem;
+    background-color: coral;
 }
