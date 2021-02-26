@@ -77,7 +77,8 @@ li a p{
 }
 
 
-@media only screen and (max-width: 749px) {
+@media only screen and (max-width: 749px),
+only screen and (max-device-width: 749px) {
     header {
         padding: 0 1rem;
     }
@@ -188,7 +189,8 @@ main img {
     opacity: 0.7;
 }
 
-@media only screen and (max-width: 811px) {
+@media only screen and (max-width: 811px),
+only screen and (max-device-width: 811px) {
     main {
         flex-flow: column;
     }
@@ -302,7 +304,8 @@ main img {
     text-decoration: underline;
 }
 
-@media only screen and (max-width: 1235px) {
+@media only screen and (max-width: 1235px),
+only screen and (max-device-width: 1235px) {
     #info {
         display: block;
     }
@@ -356,7 +359,8 @@ main img {
     }
 }
 
-@media only screen and (max-width: 811px) {
+@media only screen and (max-width: 811px),
+only screen and (max-device-width: 811px) {
     #quotation {
         display: none;
     }
@@ -450,7 +454,8 @@ main img {
     margin-top: 1rem;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px),
+only screen and (max-device-width: 768px) {
     #courses {
         display: block;
         background-color: white;
@@ -555,7 +560,8 @@ main img {
     margin-bottom: 1.3rem;
 }
 
-@media only screen and (max-width: 1320px) {
+@media only screen and (max-width: 1320px),
+only screen and (max-device-width: 1320px) {
     #urban {
         width: 50%;
     }
@@ -565,7 +571,8 @@ main img {
     }
 }
 
-@media only screen and (max-width: 1056px) {
+@media only screen and (max-width: 1056px),
+only screen and (max-device-width: 1056px) {
     #thesis h2 {
         padding-bottom: 0;
     }
@@ -586,7 +593,8 @@ main img {
     }
 }
 
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 460px),
+only screen and (max-device-width: 460px) {
     #urban h3 {
         display: none;
     }
@@ -622,13 +630,15 @@ footer p#rights::before {
     right: 0.2rem;
 }
 
-@media only screen and (max-width: 1056px) {
+@media only screen and (max-width: 1056px),
+only screen and (max-device-width: 1056px) {
     footer {
         border: none;
     }
 }
 
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 460px),
+only screen and (max-device-width: 460px) {
     footer {
         padding-bottom: 1rem;
     }
