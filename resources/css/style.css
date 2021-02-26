@@ -11,6 +11,11 @@ html {
     text-align: center;
 }
 
+img.cover {
+    object-fit: cover;
+    object-position: center center;
+}
+
 /* header */
 header {
     width: 100%;
@@ -60,11 +65,64 @@ header ul {
     align-items: center;
 
 }
- header ul li a {
+
+li a p{
      padding: 0 1rem;
      color: hsla(240, 5%, 40%, 1);
      font-weight: bold;
- }
+}
+
+.ico-mobile {
+    display: none;
+}
+
+
+@media only screen and (max-width: 749px) {
+    header {
+        padding: 0 1rem;
+    }
+
+    nav {
+        width: 75%;
+        align-self: normal;
+    }
+
+    li a p{
+        display: none;
+    }
+
+    li {
+        flex: 1 0 20%;
+        justify-items: center;
+    }
+
+    li a img {
+        margin: auto;
+    }
+
+    #logo p{
+        display: none;
+    }
+
+    #logo {
+        display: flex;
+        margin: auto;
+        min-width: 20%;
+    }
+
+    #logo a {
+        margin: auto;
+    }
+
+    #for-business {
+        display: none;
+    }
+
+    .ico-mobile {
+        display: flex;
+    }
+
+}
 
 /* CTA banner */
 
@@ -88,6 +146,7 @@ main img {
     height: 100%;
     align-content: center;
     margin: auto 1.5rem;
+    padding: 2rem 0 2rem 0;
 }
 
 #CTA h1 {
@@ -143,7 +202,7 @@ main img {
     #CTA {
         margin: 2rem 1rem;
     }
-    #CTA h1, p {
+    #CTA h1, #CTA p {
         text-align: center;
     }
 
@@ -170,6 +229,8 @@ main img {
 
 #quotation img {
     width: 100%;
+    height: auto;
+    overflow: hidden;
 }
 
 #quotation h2 {
@@ -219,6 +280,10 @@ main img {
     width: 35%;
 }
 
+#announce article img.mobile {
+    display: none;
+}
+
 
 #announce article h3 {
     font-size: 1.3rem;
@@ -237,6 +302,97 @@ main img {
     text-decoration: underline;
 }
 
+@media only screen and (max-width: 1235px) {
+    #info {
+        display: block;
+    }
+    
+    #quotation {
+        display: inline-flex;
+        flex-flow: row-reverse;
+        width: 100%;
+        padding: 2rem 0 2rem 0;
+    }
+
+    #quotation .content {
+        display: flex;
+        flex-flow: column;
+        flex: 1 1 40%;
+        padding: 0 1.5rem 0 1.5rem;
+    }
+
+    #quotation h2, #quotation p {
+        text-align: center;
+    }
+
+    #quotation img {
+        display: inline-block;
+        overflow: hidden;
+        max-width: 40%;
+        padding-right: 1.5rem;
+
+    }
+
+    #first {
+        padding-top: 0rem;
+    }
+
+    #announce {
+        width: 100%;
+        padding: 0 1.5rem 0 0.5rem;
+        margin: 0 auto;
+    }
+
+    #announce article img {
+        width: auto;
+        height: 200px;
+    }
+
+    #announce article {
+        border-bottom: 1px solid hsla(240, 5%, 90%, 1);
+        border-top: 1px solid hsla(240, 5%, 90%, 1);
+        border-left: none;
+        width: fit-content;
+    }
+}
+
+@media only screen and (max-width: 811px) {
+    #quotation {
+        display: none;
+    }
+
+    #announce {
+        padding: 0;
+        border-top: 1px solid hsla(240, 5%, 25%, 1);
+    }
+
+    #announce article {
+        display: block;
+        padding: 1rem 1rem 2rem 1rem;
+    }
+
+    #announce article img {
+        display: none;
+    }
+
+    #announce article img.mobile {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+
+    #announce article .content {
+        display: block;
+        width: 100%;
+        padding: 1rem 1rem 0 1rem;
+    }
+
+    #announce article .content a p {
+        margin-bottom: 0;
+    }
+
+}
+
 /* courses */
 
 #courses {
@@ -249,6 +405,8 @@ main img {
     justify-content: center;
     padding: 2rem 0;
     text-align: start;
+    border-bottom: 1px solid hsla(240, 5%, 25%, 1);
+    border-top: 1px solid hsla(240, 5%, 25%, 1);
 }
 
 #courses .course {
@@ -290,6 +448,28 @@ main img {
     opacity: 0.7;
     font-weight: lighter;
     margin-top: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+    #courses {
+        display: block;
+        background-color: white;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    #courses .course {
+        width: 100%;
+        background-color: hsla(240, 5%, 90%, 1);
+        padding: 1rem 1rem 1.5rem 1rem;
+        margin: 0.5rem 0;
+    }
+
+    #courses .course img, 
+    #courses .course p,
+    #courses h3::after {
+        display: none;
+    }
 }
 
 /* Thesis */
@@ -357,9 +537,10 @@ main img {
 
 .content {
     display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
-    padding-right: 1rem;
+    padding: 1rem;
 }
 
 .content h3 {
@@ -372,6 +553,47 @@ main img {
     font-size: 1rem;
     font-weight: 200;
     margin-bottom: 1.3rem;
+}
+
+@media only screen and (max-width: 1320px) {
+    #urban {
+        width: 50%;
+    }
+
+    #papers {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 1056px) {
+    #thesis h2 {
+        padding-bottom: 0;
+    }
+
+    #urban {
+        width: 100%;
+        padding: 0 0 1.5rem 0;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    #urban p {
+        display: none;
+    }
+
+    #papers {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    #urban h3 {
+        display: none;
+    }
+
+    #thesis h2 {
+        padding-bottom: 2rem;
+    }
 }
 
 /* footer */
@@ -398,4 +620,24 @@ footer p#rights::before {
     position: relative;
     bottom: 0.05rem;
     right: 0.2rem;
+}
+
+@media only screen and (max-width: 1056px) {
+    footer {
+        border: none;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    footer {
+        padding-bottom: 1rem;
+    }
+
+    footer p {
+        display: none;
+    }
+
+    #rights{
+        display: block;
+    }
 }

@@ -16,15 +16,34 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">On campus</a></li>
-                    <li><a href="#">Online</a></li>
-                    <li><a href="#">For companies</a></li>
-                    <li><a href="#">Sign in</a></li>
+                    <li>
+                        <a href="#">
+                            <p>On campus</p>
+                            <img src="./resources/images/ic-on-campus.svg" alt="" class="ico-mobile">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>Online</p>
+                            <img src="./resources/images/ic-online.svg" alt="" class="ico-mobile">
+                        </a>
+                    </li>
+                    <li id="for-business">
+                        <a href="#">
+                            <p>For companies</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>Sign in</p>
+                            <img src="./resources/images/ic-login.svg" alt="" class="ico-mobile">
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </header>
         <main>
-            <img src="./resources/images/banner.jpg" alt="View from above on students working outside">
+            <img class="cover" src="./resources/images/banner.jpg" alt="View from above on students working outside">
             <div id="CTA">
                 <h1>Learn something new everyday</h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam.</p>
@@ -33,14 +52,17 @@
         </main>  
         <div id="info">
             <div id="quotation">
-                <img src="./resources/images/information-main.jpg" alt="Emmanuel reading on the river bank">
-                <h2>It doesn't hurt to keep practicing</h2>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, numquam iste iure dolorem sint id assumenda incidunt consequuntur? Possimus ab deserunt nam quis nesciunt est vel totam ex repellat necessitatibus!"</p>
-                <p>Emmanuel, Sr Strategist at Hiring.com</p>
+                <img class="cover" src="./resources/images/information-main.jpg" alt="Emmanuel reading on the river bank">
+                <div class="content">
+                    <h2>It doesn't hurt to keep practicing</h2>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, numquam iste iure dolorem sint id assumenda incidunt consequuntur? Possimus ab deserunt nam quis nesciunt est vel totam ex repellat necessitatibus!"</p>
+                    <p>Emmanuel, Sr Strategist at Hiring.com</p>
+                </div>
             </div>
             <section id="announce">
                 <article id="first">
-                    <img src="./resources/images/information-orientation.jpg" alt="">
+                    <img class="cover" src="./resources/images/information-orientation.jpg" alt="">
+                    <img class="cover mobile" src="./resources/images/information-orientation-mobile.jpg" alt="">
                     <div class="content">
                         <h3>Orientation date</h3>
                         <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
@@ -48,7 +70,8 @@
                     </div>
                 </article>
                 <article>
-                    <img src="./resources/images/information-campus.jpg" alt="">
+                    <img class="cover" src="./resources/images/information-campus.jpg" alt="">
+                    <img class="cover mobile" src="./resources/images/information-campus-mobile.jpg" alt="">
                         <div class="content">
                         <h3>Our campus</h3>
                         <p>Find which campus is close by you</p>
@@ -56,7 +79,8 @@
                     </div>
                 </article>
                 <article>
-                    <img src="./resources/images/information-guest-lecture.jpg" alt="">
+                    <img class="cover" src="./resources/images/information-guest-lecture.jpg" alt="">
+                    <img class="cover mobile" src="./resources/images/information-guest-lecture-mobile.jpg" alt="">
                     <div class="content">
                         <h3>Our guest lecture</h3>
                         <p>Join a keynote with Oliver Sack about musci in medical treatment</p>
@@ -68,42 +92,42 @@
         <section id="courses">
             <h2>Start learning</h2>
             <div class="course">
-                <img src="./resources/images/course-software.jpg" alt="">
+                <img class="cover" src="./resources/images/course-software.jpg" alt="">
                 <div class="c-description">
                     <h3>Software engeneering</h3>
                     <p>Web development, Mobile development, iOT, APIs</p>
                 </div>
             </div>
             <div class="course">
-                <img src="./resources/images/course-computer-art.jpg" alt="">
+                <img class="cover" src="./resources/images/course-computer-art.jpg" alt="">
                 <div class="c-description">
                     <h3>Computer art</h3>
                     <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
                 </div>
             </div>
             <div class="course">
-                <img src="./resources/images/course-design.jpg" alt="">
+                <img class="cover" src="./resources/images/course-design.jpg" alt="">
                 <div class="c-description">
                     <h3>Design</h3>
                     <p>User Experience Design, User Research, Visual Design</p>
                 </div>
             </div>
             <div class="course">
-                <img src="./resources/images/course-data.jpg" alt="">
+                <img class="cover" src="./resources/images/course-data.jpg" alt="">
                 <div class="c-description">
                     <h3>Data</h3>
                     <p>Data Science, Big Data, SQL, Data Visualization</p>
                 </div>
             </div>
             <div class="course">
-                <img src="./resources/images/course-business.jpg" alt="">
+                <img class="cover" src="./resources/images/course-business.jpg" alt="">
                 <div class="c-description">
                     <h3>Business</h3>
                     <p>Product Development, Business Development, Startup</p>
                 </div>
             </div>
             <div class="course">
-                <img src="./resources/images/course-marketing.jpg" alt="">
+                <img class="cover" src="./resources/images/course-marketing.jpg" alt="">
                 <div class="c-description">
                     <h3>Marketing</h3>
                     <p>Analytics, Content Marketing, Mobile Marketing</p>
@@ -120,14 +144,14 @@
                 </div>
                 <div id="papers">
                     <div class="paper">
-                        <img src="./resources/images/thesis-fisma.jpg" alt="">
+                        <img class="cover" src="./resources/images/thesis-fisma.jpg" alt="">
                         <div class="content">
                             <h3>Fisma: Design and Prototype</h3>
                             <p>Designer showcase of new prototype product</p>
                         </div>
                     </div>
                     <div class="paper">
-                        <img src="./resources/images/thesis-now-and-then.jpg" alt="">
+                        <img class="cover" src="./resources/images/thesis-now-and-then.jpg" alt="">
                         <div class="content">
                             <h3>Now and then</h3>
                             <p>Research study about New York</p>
